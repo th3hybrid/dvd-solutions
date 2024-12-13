@@ -11,7 +11,7 @@ import {UnstoppableVault, ERC20} from "../unstoppable/UnstoppableVault.sol";
  */
 contract UnstoppableMonitor is Owned, IERC3156FlashBorrower {
     UnstoppableVault private immutable vault;
-
+    
     error UnexpectedFlashLoan();
 
     event FlashLoanStatus(bool success);
